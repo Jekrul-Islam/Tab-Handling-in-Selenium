@@ -1,8 +1,8 @@
-Selenium Tutorial: Handling Multiple Tabs in Selenium
+# Selenium Tutorial: Handling Multiple Tabs in Selenium
 
 This tutorial demonstrates how to manage multiple tabs in Selenium WebDriver using Java. Handling multiple browser tabs is a common scenario while automating web apps. By using selenium we can easily handle and switch to different tabs and windows.
 
-Prerequisites:
+# Prerequisites:
 
 Java Development Kit (JDK) installed (Java 8+ recommended).
 Selenium WebDriver library configured in the project (via Maven or manual setup).
@@ -10,11 +10,11 @@ Chrome Browser installed along with the **ChromeDriver.
 TestNG for running the test cases.
 
 
-Key Concepts in Tab Handling
+# Key Concepts in Tab Handling
 
 When automating web application’s tests, you may need to interact with browsers that have multiple tabs. Each tab or window is assigned a unique identifier, known as a window handle. In Selenium we can retrieve those identifiers and can use them to switch to the expected tab.
 
-Scenario Overview
+# Scenario Overview
 
 In this tutorial, you will:
 1. Open a website that contains a link to another site.
@@ -23,7 +23,7 @@ In this tutorial, you will:
 4. Close the new tab once the actions are complete.
 5. Switch back to the original tab and continue the automation.
 
-Process Breakdown
+# Process Breakdown
 
 1. Launching the Browser and Navigating to a Website:
    The test begins by launching the browser and navigating to a target website. Chrome options are configured to handle any SSL certificate errors that may arise during browsing.
@@ -52,10 +52,10 @@ Process Breakdown
 9. Quitting the Browser:
    At the end of the test, the browser session is terminated, closing all windows and cleaning up the WebDriver session.
 
-Smooth Scrolling
+# Smooth Scrolling
 
 In the parent window before clicking on the link that will take us to the new tab, we have developed a function that will smooth the scrolling. This smooth scrolling will provide more natural experience. To do so, the function smoothScrollToElement is implemented.
 
-Conclusion
+# Conclusion
 
 This tutorial covered how to efficiently handle multiple tabs in Selenium WebDriver. By utilizing window handles, you can manage interactions across multiple tabs, perform actions, and seamlessly switch between windows. This technique is especially useful in cases where external links or pop-up tabs are part of the web application.
